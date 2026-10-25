@@ -36,7 +36,7 @@ const steps = [
 
 const Approach = () => {
   return (
-    <section id="approach" className="py-12 sm:py-16 lg:py-20">
+    <section id="approach" className="py-12 bg-white sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
         {/* Top Content */}
         <div className="grid gap-6 md:grid-cols-2 md:items-end md:gap-12">
