@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import React from "react";
 
 const services = [
@@ -5,83 +6,113 @@ const services = [
     number: "01",
     title: "Permanent Recruitment",
     description:
-      "Build long-term teams with qualified professionals aligned to your business goals, culture and role requirements.",
+      "We identify, screen, and place highly qualified professionals who match your role requirements, organizational culture, and long-term business objectives.",
   },
   {
     number: "02",
     title: "Contract-To-Hire",
     description:
-      "Evaluate talent before a permanent commitment, with sourcing, onboarding, payroll and compliance managed for you.",
+      "We provide skilled professionals on a contractual basis. We manage sourcing, onboarding, payroll, and compliance throughout the contract period.",
   },
   {
     number: "03",
-    title: "Recruiter as a Service",
+    title: "Recruiter as a Service (RaaS)",
     description:
-      "On-demand recruiting support that scales with your hiring needs, without the overhead of full-time hiring.",
+      "We offer flexible, on-demand access to experienced recruiters through tailored recruitment support, helping businesses scale hiring efforts up or down without the overhead of maintaining a full-time recruitment team.",
   },
   {
     number: "04",
-    title: "HR Consulting",
+    title: "India Market Entry",
     description:
-      "Strategic support across policy, compliance, performance frameworks and employee engagement.",
-  },
-  {
-    number: "05",
-    title: "HR Technology",
-    description:
-      "Software selection, implementation, customisation and integration to modernise HR operations.",
-  },
-  {
-    number: "06",
-    title: "Business Setup in India",
-    description:
-      "Company registration, HR setup, payroll, workforce planning and compliance support for market entry.",
+      "We assist global and domestic companies in establishing their presence in India with end to end business setup solutions. Our services cover company registration, compliance, HR setup, payroll systems, and workforce planning and other support functions. With deep knowledge of local regulations and market dynamics, we ensure a smooth, compliant, and efficient entry into the Indian market.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="bg-gray-50 py-12 sm:py-8 lg:py-16">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
-        {/* Top Content */}
-        <div className="grid gap-6 md:grid-cols-2 md:items-end md:gap-12">
-          <div>
-            <p className="mb-2 flex items-center gap-3 text-xs font-extrabold text-blue-700">
-              OUR SERVICES
-            </p>
+    <section
+      id="services"
+      className="bg-white py-16 transition-colors duration-300 sm:py-20 lg:py-24 dark:bg-slate-950"
+    >
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        {/* Section Header */}
+        <div className="max-w-3xl">
+          <p className="mb-4 flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-blue-700 dark:text-blue-400">
+            <span className="h-px w-7 bg-blue-700 dark:bg-blue-400" />
+            Our Services
+          </p>
 
-            <h2 className="max-w-xl text-3xl leading-tight tracking-[-0.04em] text-gray-950 sm:text-5xl">
-              One partner. End-to-end HR capabilities.
-            </h2>
-          </div>
+          <h2 className="text-3xl font-semibold leading-tight tracking-[-0.04em] text-gray-950 sm:text-4xl lg:text-5xl dark:text-white">
+            The right people. The right structure.{" "}
+            <span className="text-blue-700 dark:text-blue-400">
+              Built around your business.
+            </span>
+          </h2>
 
-          <div className="flex md:justify-end">
-            <p className="max-w-md text-xs font-semibold leading-7 text-gray-500 sm:text-sm">
-              From talent acquisition to HR transformation and business setup in
-              India, our solutions are designed around your organisation's
-              needs.
-            </p>
-          </div>
+          <p className="mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base sm:leading-8 dark:text-slate-400">
+            We provide flexible talent supply solutions that help organizations
+            build strong, high performing teams aligned with their business
+            goals, culture, and workforce requirements.
+          </p>
         </div>
 
-        {/* Bottom Conten */}
-        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-8 lg:grid-cols-3">
+        {/* Editorial Service List */}
+        <div className="mt-12 border-t border-gray-200 dark:border-white/10">
           {services.map((service) => (
-            <div
+            <article
               key={service.number}
-              className="group rounded-2xl border border-gray-100 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-gray-200 hover:bg-white hover:shadow-lg hover:shadow-gray-900/[0.04] sm:p-7"
+              className="group grid gap-4 border-b border-gray-200 py-7 transition-colors duration-300 sm:py-8 md:grid-cols-[72px_minmax(0,0.9fr)_minmax(0,1.1fr)_32px] md:items-start md:gap-6 lg:gap-10 dark:border-white/10"
             >
-              <p className="inline-block w-fit rounded-lg bg-blue-100 px-2 py-2 text-sm font-bold tracking-[0.15em] text-blue-700">
+              {/* Number */}
+              <span className="text-xs font-semibold tracking-widest text-blue-700 dark:text-blue-400">
                 {service.number}
-              </p>
-              <h3 className="mt-2 text-lg tracking-tight text-gray-900">
+              </span>
+
+              {/* Title */}
+              <h3 className="max-w-sm text-xl font-semibold leading-snug tracking-tight text-gray-950 transition-colors duration-300 group-hover:text-blue-800 sm:text-2xl dark:text-white dark:group-hover:text-blue-300">
                 {service.title}
               </h3>
-              <p className="mt-2 text-xs leading-6 text-gray-500 ">
+
+              {/* Description */}
+              <p className="max-w-2xl text-sm leading-7 text-gray-600 sm:text-[15px] sm:leading-7 dark:text-slate-400">
                 {service.description}
-              </p>{" "}
-            </div>
+              </p>
+
+              {/* Arrow */}
+              <span className="hidden h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition-all duration-300 group-hover:border-blue-700 group-hover:bg-blue-700 group-hover:text-white md:flex dark:border-white/10 dark:text-slate-400 dark:group-hover:border-blue-500 dark:group-hover:bg-blue-500">
+                <ArrowUpRight
+                  size={16}
+                  className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  aria-hidden="true"
+                />
+              </span>
+
+              {/* Mobile arrow */}
+              <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 md:hidden dark:text-blue-400">
+                Explore service
+                <ArrowUpRight size={14} aria-hidden="true" />
+              </div>
+            </article>
           ))}
+        </div>
+
+        {/* Closing Note */}
+        <div className="mt-8 flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6 dark:border-white/10 dark:bg-slate-900">
+          <p className="max-w-xl text-sm leading-6 text-gray-600 dark:text-slate-300">
+            Looking for a solution tailored to your organisation's needs? Let's
+            discuss the right approach for your team.
+          </p>
+
+          <a
+            href="#contact"
+            className="group inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-lg bg-black px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 dark:bg-white dark:text-slate-950 dark:hover:bg-blue-100 dark:focus-visible:ring-offset-slate-950"
+          >
+            Discuss your needs
+            <ArrowUpRight
+              size={16}
+              className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+            />
+          </a>
         </div>
       </div>
     </section>
