@@ -71,9 +71,9 @@ const WhyUs = () => {
                   {benefit.number}
                 </span>
 
-                <span className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-xs text-gray-500 transition-all duration-300 group-hover:border-blue-700 group-hover:bg-blue-700 group-hover:text-white dark:border-white/10 dark:text-slate-400 dark:group-hover:border-blue-500 dark:group-hover:bg-blue-500 dark:group-hover:text-white">
+                {/* <span className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-xs text-gray-500 transition-all duration-300 group-hover:border-blue-700 group-hover:bg-blue-700 group-hover:text-white dark:border-white/10 dark:text-slate-400 dark:group-hover:border-blue-500 dark:group-hover:bg-blue-500 dark:group-hover:text-white">
                   {String(index + 1).padStart(2, "0")}
-                </span>
+                </span> */}
               </div>
 
               <h3 className="text-base font-semibold leading-snug tracking-tight text-gray-950 sm:text-lg dark:text-white">

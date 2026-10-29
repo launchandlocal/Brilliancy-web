@@ -133,6 +133,13 @@ const Hero = () => {
                   );
                 })}
               </div>
+
+              <div className="mt-8 flex items-center gap-3 border-t border-white/10 pt-6">
+                <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
+                <p className="text-xs font-medium tracking-wide text-slate-400 dark:text-white">
+                  Aligned people. Stronger organisations.
+                </p>
+              </div>
             </div>
           </div>
         </div>
